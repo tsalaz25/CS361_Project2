@@ -61,7 +61,8 @@ public class KnapsackDemo {
 
 
 
-    //Different Implementations
+    //Different Implementations for Problems
+    //Problem 3: Consider the Highest Value (Priority = Value)
     public static void runGreedyByValue(List<Item> original, double capacity) {
         List <Item> items = copyItems(original);
         for (Item I : items) {
@@ -71,6 +72,7 @@ public class KnapsackDemo {
         printResult(chosen);
     }
 
+    //Problem 4: Consider the Lightest (Priority = -Weight)
     public static void runGreedyByLightness(List<Item> original, double capacity) {
         List <Item> items = copyItems(original);
         for (Item I : items) {
@@ -80,6 +82,7 @@ public class KnapsackDemo {
         printResult(chosen);
     }
 
+    //Problem 5: Consider Ratio (Priority = value/weight)
     public static void runGreedyByValueToWeight(List<Item> original, double capacity) {
         List <Item> items = copyItems(original);
         for (Item I : items) {
